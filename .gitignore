@@ -1,67 +1,59 @@
-# intermediate build files
-*.bgn
-*.bit
-*.bld
-*.cmd_log
-*.drc
-*.ll
-*.lso
-*.msd
-*.msk
-*.ncd
-*.ngc
-*.ngd
-*.ngr
-*.pad
-*.par
-*.pcf
-*.prj
-*.ptwx
-*.rbb
-*.rbd
-*.stx
-*.syr
-*.twr
-*.twx
-*.unroutes
-*.ut
-*.xpi
-*.xst
-*_bitgen.xwbt
-*_envsettings.html
-*_map.map
-*_map.mrp
-*_map.ngm
-*_map.xrpt
-*_ngdbuild.xrpt
-*_pad.csv
-*_pad.txt
-*_par.xrpt
-*_summary.html
-*_summary.xml
-*_usage.xml
-*_xst.xrpt
-
-# iMPACT generated files
-_impactbatch.log
-impact.xsl
-impact_impact.xwbt
-ise_impact.cmd
-webtalk_impact.xml
-
-# Core Generator generated files
-xaw2verilog.log
-
-# project-wide generated files
-*.gise
-par_usage_statistics.html
-usage_statistics_webtalk.html
+# This is what ISE deletes if you perform project cleanup
+Snake.cmd_log
+Snake.bgn
+# Snake.bit
+Snake.bld
+Snake.drc
+Snake.lso
+Snake.ncd
+Snake.ngd
+Snake.ngr
+Snake.pad
+Snake.par
+Snake.pcf
+Snake.prj
+Snake.ptwx
+Snake.stx
+Snake.syr
+Snake.twr
+Snake.twx
+Snake.unroutes
+Snake.ut
+Snake.xpi
+Snake.xst
+Snake_map.map
+Snake_map.mrp
+Snake_map.xrpt
+Snake_map.ncd
+Snake_map.ngm
+Snake_usage.xml
+Snake_summary.xml
+bitgen.xmsgs
+map.xmsgs
+ngdbuild.xmsgs
+par.xmsgs
+trce.xmsgs
+xst.xmsgs
+# I commented this out because I think it's interesting
+# usage_statistics_webtalk.html
 webtalk.log
 webtalk_pn.xml
-
-# generated folders
-iseconfig/
 xlnx_auto_0_xdb/
 xst/
 _ngo/
-_xmsgs/
+
+# and this is what I think should be ignored
+NavigationStateMachine_summary.html
+NavigationStateMachine_envsettings.html
+iseconfig/
+
+# ok I give up and do it the other way around
+*.*
+!*.v
+!*.ucf
+!*.xise
+!.gitignore
+!README.md
+!.git/
+!notes.md
+!res/*
