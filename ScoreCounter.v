@@ -1,31 +1,11 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    
-// Design Name: 
-// Module Name:    
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 module ScoreCounter(
 		input RESET,
 		input GAMECLOCK,
 		input REACHED_TARGET,
 		output reg [3:0] CURRENT_SCORE
     );
-	 
-// the idea is that the score counter can only count once per gameclock
+	
 reg enable = 1;
 	
 always@(posedge REACHED_TARGET or posedge RESET) begin

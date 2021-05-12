@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    
-// Design Name: 
-// Module Name:    
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 module GenericCounter(	CLK,
 						RESET,
 						ENABLE_IN,
@@ -33,9 +14,7 @@ module GenericCounter(	CLK,
 	input ENABLE_IN;
 	output reg TRIGG_OUT;
 	output [COUNTER_WIDTH - 1 : 0] COUNT;
-	
-	// Declare the registers that hold the state of the 
-	// counter and the trigger signal
+
 	reg [COUNTER_WIDTH - 1 : 0] Counter;
 	
 	
